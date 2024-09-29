@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Optional: Include Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts: Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- External Css -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- End External Css -->
+</head>
+
+<body class="bg-gray-900 text-gray-900">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white fixed w-full z-50">
+        <div class="container mx-auto px-8 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 menu-list">
+                    <li><a href="#home" class="hover:text-gray-400 menu-link active">Home</a></li>
+                    <li><a href="#about" class="hover:text-gray-400 menu-link">About</a></li>
+                    <li><a href="#experience" class="hover:text-gray-400 menu-link">Experience</a></li>
+                    <li><a href="#projects" class="hover:text-gray-400 menu-link">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400 menu-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobile-menu" class="hidden bg-gray-700 md:hidden">
+            <ul class="flex flex-col space-y-2 px-6 py-4">
+                <li><a href="#home" class="block hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class="block hover:text-gray-400">About</a></li>
+                <li><a href="#experience" class="block hover:text-gray-400">Experience</a></li>
+                <li><a href="#projects" class="block hover:text-gray-400">Projects</a></li>
+                <li><a href="#contact" class="block hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-10 bg-cover bg-center bg-theme"
+        data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+        <div class="flex flex-col lg:flex-row items-center justify-between w-full max-w-6xl pt-12">
+            <!-- Left Side: Text Content -->
+            <div class="text-center lg:text-left text-white space-y-6 lg:w-1/2">
+                <h2 class="text-7xl font-bold mb-2 heading-title">
+                    <span class="text-white">Rajnish</span> <span class="text-blue-500">Gupta</span>
+                </h2>
+                <p class="text-3xl heading-description"> Frontend Developer based in Seoni, India. I specialize in
+                    crafting visually
+                    engaging, user-friendly websites, with a focus on responsive and modern design.</p>
+
+                <!-- Call to Action Button -->
+                <a href="tel:+918839029696"
+                    class="mt-6 inline-block bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-full shadow-lg transition-all duration-300">
+                    Get Connected
+                </a>
+            </div>
+
+            <!-- Right Side: Profile Image -->
+            <div class="mt-10 lg:mt-0 lg:pl-10">
+                <div
+                    class="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-blue-500">
+                    <img src="asset/img/profile/user2.png" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- About Section -->
+    <section id="about" class="pt-14 pb-14 bg-[#0f0e2d] text-white">
+        <div class="container mx-auto px-8">
+            <div class="custom-grid" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <!-- Left Side: Image and Info -->
+                <div class="space-y-6 relative about-images order-1">
+                    <div class="about-area">
+                        <img src="https://marketifythemes.net/html/foliox/img/about/1.png
+                        " alt="Work Image" class="about-image rounded-xl shadow-lg w-full h-56 object-cover">
+                        <div class="about-work-img">
+                            <div class="position">
+                                <img src="asset/img/about/about-info.jpg" alt="Profile Picture"
+                                    class="small_image rounded-xl shadow-lg w-full h-56 object-cover">
+                            </div>
+                        </div>
+                        <div class="absolute top-0 left-0 p-6 py-5 bg-blue-500 rounded award-icon">
+                            <i class="fas fa-award text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <div class="text-center md:text-left experience-text">
+                        <h3 class="text-5xl font-bold text-blue-500">1</h3>
+                        <p>Experiences Years</p>
+                    </div>
+                </div>
+
+                <!-- Right Side: About Info and Contact Details -->
+                <div class="about-info order-2">
+                    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                    <p class="mb-6">
+                        I am a motivated frontend developer with one year of experience, passionate about building
+                        dynamic and responsive web interfaces. My expertise lies in mastering new technologies
+                        swiftly
+                        and solving problems with a creative and analytical mindset. I thrive in fast-paced
+                        environments, where I can apply my technical knowledge of web development to deliver
+                        efficient
+                        solutions. Known for being adaptable and detail-oriented, I continually strive for
+                        professional
+                        growth and skill enhancement. I am eager to contribute to collaborative team efforts,
+                        tackling
+                        complex challenges with enthusiasm and dedication.
+                    </p>
+
+                    <!-- Contact Info -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="space-y-2">
+                            <p><strong>Name:</strong> Rajnish Kumar Gupta</p>
+                            <p><strong>Email:</strong> rajneesh1997gupta@gmail.com</p>
+                            <p><strong>Phone:</strong> +918839029696</p>
+                        </div>
+                    </div>
+
+                    <a href="asset/img/profile/rajnish-resume-experience2424 (1).pdf" download="Rajnish_Resume.pdf"
+                        class="inline-block bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-full shadow-lg transition-all duration-300">
+                        Download CV
+                    </a>
+                    <div class="wrapper">
+                        <a href="#">
+                            <div class="bg-ico" id="facebook"><i class="fab fa-facebook social  facebook fa-2x"></i>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="bg-ico" id="twitter"><i
+                                    class="fa-brands fa-twitter x-twitter social twitter fa-2x"></i></div>
+                        </a>
+                        <a href="#">
+                            <div class="bg-ico" id="instagram"><i class="fab fa-instagram social instagram fa-2x"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rajneesh-gupta-401663242/" target="_blank">
+                            <div class="bg-ico" id="linkedin"><i class="fab fa-linkedin social  linkedin fa-2x"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Skills Section -->
+    <section class="pt-14 pb-14 text-white">
+        <div class="container mx-auto px-10" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">
+            <div class="mb-10 text-center ">
+                <h3 class="text-3xl font-semibold">I Work Hard to Improve My Skills Regularly</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-10">
+                <!-- Skill: HTML -->
+                <div class="flex items-center justify-between">
+                    <p class="text-xl font-medium text-white">HTML</p>
+                    <div class="relative w-24 h-24">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <path stroke-dasharray="95, 100" class="stroke-current text-gray-300" stroke-width="4"
+                                fill="none" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path stroke-dasharray="95, 100" class="stroke-current text-blue-500" stroke-width="4"
+                                fill="none" stroke-linecap="round" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <p class="absolute inset-0 flex items-center justify-center text-lg font-bold">95%</p>
+                    </div>
+                </div>
+                <!-- Skill: CSS -->
+                <div class="flex items-center justify-between">
+                    <p class="text-xl font-medium text-white">CSS</p>
+                    <div class="relative w-24 h-24">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <path stroke-dasharray="90, 100" class="stroke-current text-gray-300" stroke-width="4"
+                                fill="none" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path stroke-dasharray="90, 100" class="stroke-current text-blue-500" stroke-width="4"
+                                fill="none" stroke-linecap="round" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <p class="absolute inset-0 flex items-center justify-center text-lg font-bold">90%</p>
+                    </div>
+                </div>
+                <!-- Skill: CSS -->
+                <div class="flex items-center justify-between">
+                    <p class="text-xl font-medium text-white">Javascript</p>
+                    <div class="relative w-24 h-24">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <path stroke-dasharray="75, 100" class="stroke-current text-gray-300" stroke-width="4"
+                                fill="none" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path stroke-dasharray="75, 100" class="stroke-current text-blue-500" stroke-width="4"
+                                fill="none" stroke-linecap="round" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <p class="absolute inset-0 flex items-center justify-center text-lg font-bold">75%</p>
+                    </div>
+                </div>
+                <!-- Skill: CSS -->
+                <div class="flex items-center justify-between">
+                    <p class="text-xl font-medium text-white">React js</p>
+                    <div class="relative w-24 h-24">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <path stroke-dasharray="40, 100" class="stroke-current text-gray-300" stroke-width="4"
+                                fill="none" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path stroke-dasharray="40, 100" class="stroke-current text-blue-500" stroke-width="4"
+                                fill="none" stroke-linecap="round" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <p class="absolute inset-0 flex items-center justify-center text-lg font-bold">40%</p>
+                    </div>
+                </div>
+                <!-- Skill: CSS -->
+                <div class="flex items-center justify-between">
+                    <p class="text-xl font-medium text-white">My Sql</p>
+                    <div class="relative w-24 h-24">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <path stroke-dasharray="50, 100" class="stroke-current text-gray-300" stroke-width="4"
+                                fill="none" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path stroke-dasharray="50, 100" class="stroke-current text-blue-500" stroke-width="4"
+                                fill="none" stroke-linecap="round" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <p class="absolute inset-0 flex items-center justify-center text-lg font-bold">50%</p>
+                    </div>
+                </div>
+                <!-- Skill: CSS -->
+                <div class="flex items-center justify-between">
+                    <p class="text-xl font-medium text-white">Bootstrap and Tailwind</p>
+                    <div class="relative w-24 h-24">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <path stroke-dasharray="75, 100" class="stroke-current text-gray-300" stroke-width="4"
+                                fill="none" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path stroke-dasharray="75, 100" class="stroke-current text-blue-500" stroke-width="4"
+                                fill="none" stroke-linecap="round" d="M18 2.0845
+                               a 15.9155 15.9155 0 0 1 0 31.831
+                               a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <p class="absolute inset-0 flex items-center justify-center text-lg font-bold">75%</p>
+                    </div>
+                </div>
+                <!-- Additional skills can be added similarly -->
+            </div>
+
+            <div class="">
+                <div class="mb-10 text-center">
+                    <h1 class="text-3xl font-bold">Professional Skills</h1>
+                </div>
+                <div class="flex skill-responsive">
+                    <!-- Icon 1 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-brands fa-html5 text-black text-5xl group-hover:text-red-500 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            HTML5
+                        </span>
+                    </div>
+
+                    <!-- Icon 2 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-brands fa-css3-alt text-black text-5xl group-hover:text-blue-500 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            CSS3
+                        </span>
+                    </div>
+
+                    <!-- Icon 3 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-brands fa-js text-black text-5xl group-hover:text-yellow-400 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            JavaScript
+                        </span>
+                    </div>
+
+                    <!-- Icon 4 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-brands fa-react text-black text-5xl group-hover:text-blue-400 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            React
+                        </span>
+                    </div>
+
+                    <!-- Icon 5 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-solid fa-database text-black text-5xl group-hover:text-green-500 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            Database
+                        </span>
+                    </div>
+
+                    <!-- Icon 6 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-brands fa-github text-black text-5xl group-hover:text-gray-600 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            GitHub
+                        </span>
+                    </div>
+
+                    <!-- Icon 7 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-brands fa-bootstrap text-black text-5xl group-hover:text-purple-500 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            Bootstrap
+                        </span>
+                    </div>
+
+                    <!-- Icon 8 with hover text -->
+                    <div
+                        class="relative w-24 h-24 rounded-full bg-white flex justify-center items-center icon-container group">
+                        <i
+                            class="fa-solid fa-wind text-black text-5xl group-hover:text-purple-500 transition duration-300"></i>
+                        <span
+                            class="absolute opacity-0 group-hover:opacity-100 transition duration-300 text-center text-sm font-semibold text-white">
+                            Tailwind
+                        </span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Services Section -->
+    <section class="pt-14 pb-14 text-white">
+        <div class="container mx-auto px-10">
+            <div class="text-center mb-10" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300">
+                <h2 class="text-3xl font-bold">What I Do for My Company</h2>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up"
+                data-aos-duration="1500" data-aos-delay="300">
+                <!-- Card 1 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg p-8 py-12 text-center hover:bg-gray-700 transition duration-300">
+                    <div class="flex justify-center items-center mb-10">
+                        <!-- Circle wrapper for the SVG -->
+                        <div class="bg-white rounded-full p-5"> <!-- Increased padding for a larger circle -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#5f6368"> <!-- Reduced SVG size -->
+                                <path
+                                    d="M40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Website Design</h3>
+                    <p class="text-blue-200">
+                        Website design focuses on blending visual appeal and usability. Essential features include
+                        mobile responsiveness, clear navigation, captivating graphics, fast loading times, SEO
+                        optimization, and interactive components to boost user interaction.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg p-8 py-12 text-center hover:bg-gray-700 transition duration-300">
+                    <div class="flex justify-center items-center mb-10">
+                        <!-- Circle wrapper for the SVG -->
+                        <div class="bg-white rounded-full p-5"> <!-- Increased padding for a larger circle -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#5f6368"> <!-- Reduced SVG size -->
+                                <path
+                                    d="M240-500v-220h220v220H240Zm0 260v-220h220v220H240Zm260-260v-220h220v220H500Zm0 260v-220h220v220H500ZM320-580h60v-60h-60v60Zm260 0h60v-60h-60v60ZM320-320h60v-60h-60v60Zm260 0h60v-60h-60v60ZM380-580Zm200 0Zm0 200Zm-200 0ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Graphic Design</h3>
+                    <p class="text-blue-200">
+                        Graphic Design Canva offers an intuitive platform for creating stunning visuals. Features
+                        include customizable templates, drag-and-drop editing, extensive image libraries,
+                        collaborative
+                        tools, and easy sharing options for professional results.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg p-8 py-12 text-center hover:bg-gray-700 transition duration-300">
+                    <div class="flex justify-center items-center mb-10">
+                        <!-- Circle wrapper for the SVG -->
+                        <div class="bg-white rounded-full p-5"> <!-- Adjust padding for a larger circle -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#5f6368"> <!-- Adjust SVG size -->
+                                <path
+                                    d="M320-120v-80h80v-80H160q-33 0-56.5-23.5T80-360v-400q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v400q0 33-23.5 56.5T800-280H560v80h80v80H320ZM160-360h640v-400H160v400Zm0 0v-400 400Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-blue-200">Web development involves building and maintaining websites, focusing on
+                        user experience, functionality, and responsiveness. Key features include custom design,
+                        interactive elements, SEO optimization, and mobile compatibility to enhance client
+                        engagement.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Experience Section -->
+    <section class="pt-14 pb-14 text-white" id="experience">
+        <!-- Resume Section -->
+        <div class="container mx-auto px-10">
+            <div class="text-center mb-10" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
+                <h2 class="text-3xl font-bold">I Worked for Some Companies and Experience</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12" data-aos="zoom-in" data-aos-duration="1500"
+                data-aos-delay="300">
+                <!-- Experience Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Experience</h3>
+
+                    <!-- Experience Item 1 -->
+                    <div class="relative pb-8">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="h-full border-l-2 border-blue-600 border-left-margin"></div>
+                        </div>
+                        <div class="relative flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center">
+                                    <!-- Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#fff">
+                                        <path
+                                            d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold">Frontend Developer</h4>
+                                <p class="text-blue-400">Defenzlite Private Limited</p>
+                                <p class="text-blue-200">27/05/23 - Present</p>
+                                <p class="text-blue-200 mt-2">Creative coder who builds engaging, user-friendly web
+                                    interfaces.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="relative pb-8">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="h-full border-l-2 border-blue-600 border-left-margin"></div>
+                        </div>
+                        <div class="relative flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center">
+                                    <!-- Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#fff">
+                                        <path
+                                            d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold">Web Designer</h4>
+                                <p class="text-blue-400">Auxes It Solution</p>
+                                <p class="text-blue-200">10/03/23 - 20/05/23</p>
+                                <p class="text-blue-200 mt-2">Innovative designer specializing in beautiful,
+                                    functional,
+                                    and responsive web interfaces.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="relative pb-8">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="h-full border-l-2 border-blue-600 border-left-margin"></div>
+                        </div>
+                        <div class="relative flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center">
+                                    <!-- Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="#fff">
+                                        <path
+                                            d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm240-600h160v-80H400v80Zm400 360H600v80H360v-80H160v160h640v-160Zm-360 0h80v-80h-80v80Zm-280-80h200v-80h240v80h200v-200H160v200Zm320 40Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold">Web Designer</h4>
+                                <p class="text-blue-400">Digital Hub Soluation </p>
+                                <p class="text-blue-200">01/03/23 - 09/03/23</p>
+                                <p class="text-blue-200 mt-2">Creative professional crafting visually appealing and
+                                    user-friendly websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Education</h3>
+
+                    <!-- Education Item 1 -->
+                    <div class="relative pb-8">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="h-full border-l-2 border-blue-600 border-left-margin"></div>
+                        </div>
+                        <div class="relative flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center">
+                                    <!-- Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960"
+                                        width="26px" fill="#fff">
+                                        <path
+                                            d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold">Bachelor of Computer Secience</h4>
+                                <p class="text-blue-400">Radharaman Engineering College Bhopal</p>
+                                <p class="text-blue-200">2019 - 2022</p>
+                                <p class="text-blue-200 mt-2">Bachelor of Computer Science: Study of computing,
+                                    programming, and technology.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="relative pb-8">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="h-full border-l-2 border-blue-600 border-left-margin"></div>
+                        </div>
+                        <div class="relative flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center">
+                                    <!-- Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960"
+                                        width="26px" fill="#fff">
+                                        <path
+                                            d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold">Diploma of Computer Secience</h4>
+                                <p class="text-blue-400">Government Polytechnic College Waidhan</p>
+                                <p class="text-blue-200">2016 - 2019</p>
+                                <p class="text-blue-200 mt-2">Comprehensive program covering programming,
+                                    networking,
+                                    and cybersecurity fundamentals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="relative pb-8">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="h-full border-l-2 border-blue-600 border-left-margin"></div>
+                        </div>
+                        <div class="relative flex items-start space-x-4">
+                            <div class="flex-shrink-0">
+                                <div class="h-12 w-12 rounded-full bg-blue-600 flex items-center justify-center">
+                                    <!-- Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960"
+                                        width="26px" fill="#fff">
+                                        <path
+                                            d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold">Higher Secondary School</h4>
+                                <p class="text-blue-400">Government Higher Secondary School Patharwala</p>
+                                <p class="text-blue-200">2014 - 2015</p>
+                                <p class="text-blue-200 mt-2">A school providing advanced education for students
+                                    before
+                                    university.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Education Section -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Experience Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="pt-14 pb-14">
+        <div class="container mx-auto px-10">
+            <div class="mb-10 text-center" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="300">
+                <h3 class="text-white text-3xl font-semibold">My Projects</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="zoom-in-down"
+                data-aos-duration="1500" data-aos-delay="300">
+                <!-- Project Card 1 -->
+                <div
+                    class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 project-card">
+                    <img src="asset/img/project/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Trubuddyy</h3>
+                        <p class="text-gray-700 mb-4">TruBuddyy.com is an online platform connecting users with
+                            trusted
+                            service providers for tasks such as home maintenance, cleaning, and repairs...</p>
+                        <a href="https://trubuddyy.com/" class="text-blue-500 hover:underline" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div
+                    class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 project-card">
+                    <img src="asset/img/project/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Defenzsec</h3>
+                        <p class="text-gray-700 mb-4">I wasn't able to access the website at the moment. However,
+                            Defenzsec is a security services provider offering solutions like cybersecurity, risk
+                            management, and more...</p>
+                        <a href="https://defenzsec.com/" class="text-blue-500 hover:underline" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div
+                    class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 project-card">
+                    <img src="asset/img/project/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Newtap</h3>
+                        <p class="text-gray-700 mb-4">Newtap is a financial service offering quick and easy access
+                            to
+                            personal loans...</p>
+                        <a href="https://newtap.in/" class="text-blue-500 hover:underline" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div
+                    class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 project-card">
+                    <img src="asset/img/project/project4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Digital Shiksha</h3>
+                        <p class="text-gray-700 mb-4">Digital Shiksha is an innovative online learning platform...
+                        </p>
+                        <a href="https://academy.defenzelite.com/" class="text-blue-500 hover:underline"
+                            target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div
+                    class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 project-card">
+                    <img src="asset/img/project/project5.jpg" alt="Project 5" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">KhanaGharPer</h3>
+                        <p class="text-gray-700 mb-4">Khana Gharpe is an online platform dedicated to restaurant
+                            discovery and food delivery...</p>
+                        <a href="https://khana-gharpe.dze-labs.com/" class="text-blue-500 hover:underline"
+                            target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div
+                    class="bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 project-card">
+                    <img src="asset/img/project/project6.jpg" alt="Project 6" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Chalocab</h3>
+                        <p class="text-gray-700 mb-4">Chalocab is a ride-hailing platform offering convenient
+                            transportation services...</p>
+                        <a href="https://chalocab.dze-labs.com/" class="text-blue-500 hover:underline"
+                            target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <div class="container mx-auto pt-14 pb-20 px-10" id="contact">
+        <div class="text-center mb-10" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+            <h3 class="text-white text-3xl font-semibold">Get In Touch</h3>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" data-aos="fade-right" data-aos-duration="1500"
+            data-aos-delay="300">
+            <!-- Left Side - Contact Information -->
+            <div class="">
+                <div class="map-container mb-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4030.853643272448!2d79.54671272021851!3d22.114185046717914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1727542124234!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contact-info space-y-6 mb-3">
+                    <div class="flex items-center gap-3">
+                        <span class="foliox_tm_contact">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <div>
+                            <h3 class="text-lg font-bold">Address</h3>
+                            <p>Near Bharat Petroleum, Ayodhya Nagar ,Lugharwara, Seoni, Madhya Pradesh 480661</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info flex items-center gap-5">
+                    <div class="flex items-center gap-3 mb-sm-15">
+                        <a href="mailto:rajneesh1997gupta@gmail.com" class="foliox_tm_contact">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <div>
+                            <h3 class="text-lg font-bold">Email</h3>
+                            <p>rajneesh1997gupta@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <a href="tel:+918839029696" class="foliox_tm_contact">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <div>
+                            <h3 class="text-lg font-bold">Phone</h3>
+                            <p>+91 8839029696</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Contact Form -->
+            <div class="contact-form bg-gray-800 p-8 rounded-lg">
+                <form action="#" method="POST" class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Enter Your Name"
+                            class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none">
+                        <input type="email" placeholder="Enter Your Email"
+                            class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Enter Your Phone"
+                            class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none">
+                        <input type="text" placeholder="Enter Subject"
+                            class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none">
+                    </div>
+                    <textarea placeholder="Write your message here"
+                        class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none h-32"></textarea>
+                    <button type="submit"
+                        class="w-full p-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600">Submit
+                        Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <!-- End Back to top button -->
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-8 text-center">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- End AOS JS -->
+
+    <!-- Jquery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- End Jquery JS -->
+    <script src="./asset/js/index.js"></script>
+</body>
+
+</html>
